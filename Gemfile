@@ -49,3 +49,7 @@ end
 gem 'rack-cors'
 
 gem 'better_errors'
+
+gem 'jwt'
+
+gem 'bcrypt'
