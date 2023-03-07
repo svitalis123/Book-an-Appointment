@@ -19,6 +19,8 @@ default: &default
   encoding: unicode
   username: <%= ENV["APP_USERNAME"] %>
   password: <%= ENV["APP_PASSWORD"] %>
+  host: localhost
+  port: 5432
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>

@@ -30,7 +30,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_07_101532) do
     t.string "service"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -38,7 +37,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_07_101532) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "Reservation_id"
   end
 
 end

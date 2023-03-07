@@ -1,2 +1,4 @@
 APP_USERNAME: "postgres"
-APP_PASSWORD: "Slu1171129193@2022"
+APP_PASSWORD: "loofer"
+APP_HOST: "localhost"
+APP_PORT: "5432"
