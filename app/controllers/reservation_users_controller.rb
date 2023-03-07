@@ -1,21 +1,21 @@
 class ReservationUsersController < ApplicationController
-  def index
-    @reservation_users = ReservationUser.all
-    render json: @reservation_users
-  end
-
   def create
-    @reservation_user = ReservationUser.new(reservation_user_params)
-    if @reservation_user.save
-      render json: @reservation_user, status: :created
+    @reservation = Reservation.new(reservation_params)
+    if @reservation.save
+      @reservation_user = @reservation.reservation_users.build(user_id: params[:user_id])
+      if @reservation_user.save
+        render json: @reservation, status: :created
+      else
+        render json: @reservation_user.errors, status: :unprocessable_entity
+      end
     else
-      render json: @reservation_user.errors, status: :unprocessable_entity
+      render json: @reservation.errors, status: :unprocessable_entity
     end
   end
 
   private
 
-  def reservation_user_params
-    params.require(:reservation_user).permit(:vehicle, :model, :year, :color, :service)
+  def reservation_params
+    params.require(:reservation).permit(:vehicle, :model, :year, :color, :location, :service)
   end
 end
