@@ -1,8 +1,10 @@
 class ReservationController < ApplicationController
+  # before_action :require_login
   def create
     @reservation = Reservation.new(reservation_params)
+    @reservation.user_id=1
     if @reservation.save
-      @reservation_user = @reservation.reservation_users.build(user_id: params[:user_id], reservation_id: @reservation.id)
+      @reservation_user = @reservation.reservation_users.build(user_id: 1, reservation_id:@reservation.id)
       if @reservation_user.save
         render json: @reservation, status: :created
       else
@@ -16,6 +18,6 @@ class ReservationController < ApplicationController
   private
 
   def reservation_params
-    params.require(:reservation).permit(:vehicle, :model, :year, :color, :location, :service)
+    params.permit(:vehicle, :model, :year, :color, :location, :service)
   end
 end
