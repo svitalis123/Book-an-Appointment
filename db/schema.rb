@@ -38,6 +38,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_09_092742) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "photo"
+
+    # engineer = name of person working on car
+    # duration = 7days waiting
+    # labour = how many hours spent on car
+    # description = what will be done on car
+    # price = cost of service
   end
 
   create_table "users", force: :cascade do |t|
