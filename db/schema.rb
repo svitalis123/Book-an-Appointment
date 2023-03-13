@@ -40,7 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_13_101922) do
     t.string "photo"
     t.string "engineer"
     t.decimal "price"
-    t.time "labour"
+    t.integer "labour"
     t.integer "duration"
     t.string "description"
   end
