@@ -1,10 +1,15 @@
 class ReservationController < ApplicationController
-  # before_action :require_login
+  before_action :require_login
+
+  def index
+    @reservations = Reservation.all
+    render json: @reservations
+  end
+
   def create
     @reservation = Reservation.new(reservation_params)
-    @reservation.user_id=2
     if @reservation.save
-      @reservation_user = @reservation.reservation_users.build(user_id: 2, reservation_id:@reservation.id)
+      @reservation_user = @reservation.reservation_users.build(user_id: params[:userId], reservation_id:@reservation.id)
       if @reservation_user.save
         render json: @reservation, status: :created
       else
