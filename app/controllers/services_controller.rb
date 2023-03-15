@@ -7,6 +7,10 @@ class ServicesController < ApplicationController
     render json: @services
   end
 
+  def show
+    render json: @service
+  end
+
   # POST /services
   def create
     @service = Service.new(service_params)
