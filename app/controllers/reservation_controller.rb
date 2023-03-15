@@ -1,6 +1,4 @@
 class ReservationController < ApplicationController
-  before_action :require_login
-
   def index
     @reservations = Reservation.all
     render json: @reservations
