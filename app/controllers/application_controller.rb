@@ -9,24 +9,22 @@ class ApplicationController < ActionController::API
   end
 
   def decoded_token
-    if auth_header
-      token = auth_header.split(' ')[1]
-      begin
-        JWT.decode(token, 'my_secret', true, algorithm: 'HS256')
-      rescue JWT::DecodeError
-        []
-      end
+    return unless auth_header
+
+    token = auth_header.split[1]
+    begin
+      JWT.decode(token, 'my_secret', true, algorithm: 'HS256')
+    rescue JWT::DecodeError
+      []
     end
   end
 
   def session_user
     decoded_hash = decoded_token
-    if !decoded_hash.nil?
-      user_id = decoded_hash[0]["user_id"]
-      @user = User.find_by(id: user_id)
-    else
-      nil
-    end
+    return if decoded_hash.nil?
+
+    user_id = decoded_hash[0]['user_id']
+    @user = User.find_by(id: user_id)
   end
 
   def current_user
@@ -34,10 +32,10 @@ class ApplicationController < ActionController::API
   end
 
   def logged_in?
-      !!session_user
+    !!session_user
   end
 
   def require_login
-    render json: {message: 'Please Login'}, status: :unauthorized unless logged_in?
+    render json: { message: 'Please Login' }, status: :unauthorized unless logged_in?
   end
 end
