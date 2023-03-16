@@ -60,11 +60,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Bare Foot Mechanic] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Bare Foot Mechanic]** 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -205,17 +205,28 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Temitope Ogunleye**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@topeogunleye](https://github.com/topeogunleye)
+- Twitter: [@tope_leye](https://twitter.com/tope_leye)
+- LinkedIn: [ogunleye](https://linkedin.com/in/ogunleye)
 
-👤 **Author2**
+👤 **David Amon-Cofie**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@amon-cofie](https://github.com/amon-cofie)
+- Twitter: [@amon_cofie](https://twitter.com/amon_cofie)
+- LinkedIn: [David Amon-Cofie](https://www.linkedin.com/in/david-amon-cofie-2389ab241/)
+
+👤 **Shuhad Loofer**
+
+- GitHub: [@Shuhad786](https://github.com/Shuhad786)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/shuhad-loofer)
+
+👤 **Vitalis Mutwiri**
+
+- GitHub: [@svitalis123](https://github.com/svitalis123)
+- Twitter: [@WilsonVitalis](https://twitter.com/WilsonVitalis)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/vitalismutwiri)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
