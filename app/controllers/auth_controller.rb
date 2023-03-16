@@ -11,15 +11,18 @@ class AuthController < ApplicationController
     end
   end
 
-  # def auto_login
-  #   if session_user
-  #     render json: session_user
-  #   else
-  #     render json: {errors: "No User Logged In"}
-  #   end
-  # end
+  def auto_login
+    if session_user
+      render json: session_user
+    else
+      render json: {errors: "No User Logged In"}
+    end
+  end
 
-  # def user_is_authed
-  #   render json: {message: "You are authorized"}
-  # end
+  def user_is_authed
+    @reserve=Reservation.find_by(user_id: current_user)
+    render json: {message: "You are authorized", data: @reserve}    
+  end
 end
+# eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.4wBWO1V8e-2SpT_TqvZLsnAp6-SLTgbQZjyaMQpEqpY
+# eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.4wBWO1V8e-2SpT_TqvZLsnAp6-SLTgbQZjyaMQpEqpY
