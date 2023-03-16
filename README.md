@@ -208,9 +208,8 @@ https://render.com
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Implement user authentication]**
+- [ ] **[Update database with new user information]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,9 +227,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+Plese give a star on our repository as we worked long hours show casing our skills and would really appreciate your feedback thank you
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -238,9 +235,12 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+The layout and color scheme was inspired by Murat Korkmaz please view his link below
 
-I would like to thank...
+Designed by:
+
+- Murat Korkmaz
+https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,13 +250,13 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[How did you determine the ERB diagram]**
 
-  - [Answer_1]
+  - [We looked at what was needed and worked accordingly]
 
-- **[Question_2]**
+- **[Was it hard doing this]**
 
-  - [Answer_2]
+  - [Yes, it was however nothing worth struggling for comes easy]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -265,7 +265,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
