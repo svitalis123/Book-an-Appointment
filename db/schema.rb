@@ -10,9 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_06_123515) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_07_101532) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "reservation_users", id: false, force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "reservation_id", null: false
+    t.index ["reservation_id", "user_id"], name: "index_reservation_users_on_reservation_id_and_user_id"
+    t.index ["user_id", "reservation_id"], name: "index_reservation_users_on_user_id_and_reservation_id"
+  end
+
+  create_table "reservations", force: :cascade do |t|
+    t.string "vehicle"
+    t.string "model"
+    t.integer "year"
+    t.string "color"
+    t.string "location"
+    t.string "service"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"

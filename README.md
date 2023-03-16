@@ -27,10 +27,10 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="logo-png.png" alt="logo" width="140"  height="150" />
+  <img class="README-logo" src="./app/assets/logo-jpg.jpg" alt="logo" width="140"  height="150" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Book an Appointment README</b></h3>
 
 </div>
 
