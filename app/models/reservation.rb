@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Reservation < ApplicationRecord
   validates :model, presence: true
   validates :year, numericality: { only_integer: true }
