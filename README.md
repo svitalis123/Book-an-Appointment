@@ -114,79 +114,68 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
+- VSCODE installed
+- GitHub account
+- Node.js installed
+- Ruby installed (version 3.1.3 used)
+- rails installed (version 7.0.4 used)
+- Postgresql installed
+
 > Clone repository to local machine for the back-end rails
 
 > Clone this repository link for the front-end react [REACT-FRONTEND]https://github.com/topeogunleye/appointment-front-end
 
 ### Setup
 
-Clone this repository to your desired folder:
+> Rails :- ensure repository is cloned
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
+> React :- ensure repository is cloned in link provided
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
+Rails: 
 
-```sh
-  cd my-project
-  gem install
-```
---->
+Use bundle install (ensure rails version is the same and bundler is the same versions)
+
+React:
+
+Use npm i
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+Rails: command works in cmd or powershell in VSCODE
 
-```sh
-  rails server
-```
---->
+rails db:create (creates a database to postgresql accessed via pgadmin)
 
-### Run tests
+rails db:migrate
 
-To run tests, run the following command:
+rails db:seed (preloaded information for easy access)
 
-<!--
-Example command:
+`rails s -p 8000`
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+runs the port from 8000 cannot run the React app on the same server
+
+React: command works in cmd or powershell in VSCODE
+
+`npm start`
+
+runs the port from 3000
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+https://render.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Temitope Ogunleye**
 
