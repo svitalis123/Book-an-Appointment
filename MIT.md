@@ -1,10 +1,11 @@
+<<<<<<< HEAD
+## Copyright 2022, FAWOLE MUYIWA & SHUHAD LOOFER
+=======
 ## Copyright 2023, [Shuhad Loofer, Temitope Ogunleye, David Amon-Cofie, Vitalis Mutwiri]
+>>>>>>> development
 
-###### Please delete this line and the next one
-###### APP TYPE can be a webpage/website, a web app, a software and so on
+Permission is hereby granted, free of charge, to any person obtaining a copy of this Recipe App and associated documentation files, to deal in the Recipe App without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Recipe App, and to permit persons to whom the Recipe App is furnished to do so, subject to the following conditions:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this [ROR] and associated documentation files, to deal in the [ROR] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [ROR], and to permit persons to whom the [ROR] is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Recipe App.
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [ROR].
-
-THE [APP TYPE] IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE [ROR] OR THE USE OR OTHER DEALINGS IN THE [ROR].
+THE Recipe App IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE Recipe App OR THE USE OR OTHER DEALINGS IN THE Recipe App.

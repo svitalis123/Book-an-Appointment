@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class ApplicationController < ActionController::API
   # before_action :require_login
   def encode_token(payload)
@@ -13,7 +11,7 @@ class ApplicationController < ActionController::API
   def decoded_token
     return unless auth_header
 
-    token = auth_header.split(' ')[1]
+    token = auth_header.split[1]
     begin
       JWT.decode(token, 'my_secret', true, algorithm: 'HS256')
     rescue JWT::DecodeError
