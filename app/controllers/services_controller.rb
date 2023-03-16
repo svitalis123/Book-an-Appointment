@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class ServicesController < ApplicationController
   before_action :set_service, only: %i[show update destroy]
 
