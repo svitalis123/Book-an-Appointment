@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class ReservationController < ApplicationController
   def index
     @reservations = Reservation.all
@@ -5,10 +6,10 @@ class ReservationController < ApplicationController
   end
 
   def create
-    date = Time.at(params[:date].to_i / 1000).strftime("%d/%m/%Y")
-    @reservation = Reservation.new(reservation_params.merge(date: date))
+    date = Time.at(params[:date].to_i / 1000).strftime('%d/%m/%Y')
+    @reservation = Reservation.new(reservation_params.merge(date:)))
     if @reservation.save
-      @reservation_user = @reservation.reservation_users.build(user_id: params[:userId], reservation_id:@reservation.id)
+      @reservation_user = @reservation.reservation_users.build(user_id: params[:userId], reservation_id: @reservation.id)
       if @reservation_user.save
         render json: @reservation, status: :created
       else
@@ -25,7 +26,3 @@ class ReservationController < ApplicationController
     params.permit(:vehicle, :model, :year, :color, :location, :service, :username)
   end
 end
-
-
-
-

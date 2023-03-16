@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Service < ApplicationRecord
   validates :service, presence: true
   validates :photo, presence: true
@@ -5,5 +7,5 @@ class Service < ApplicationRecord
   validates :labour, presence: true
   validates :engineer, presence: true
   validates :price, presence: true
-  validates :duration, numericality: {only_integer: true}
+  validates :duration, numericality: { only_integer: true }
 end
