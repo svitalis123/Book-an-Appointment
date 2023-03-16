@@ -5,7 +5,8 @@ class ReservationController < ApplicationController
   end
 
   def create
-    @reservation = Reservation.new(reservation_params)
+    date = Time.at(params[:date].to_i / 1000).strftime("%d/%m/%Y")
+    @reservation = Reservation.new(reservation_params.merge(date: date))
     if @reservation.save
       @reservation_user = @reservation.reservation_users.build(user_id: params[:userId], reservation_id:@reservation.id)
       if @reservation_user.save
@@ -21,6 +22,10 @@ class ReservationController < ApplicationController
   private
 
   def reservation_params
-    params.permit(:vehicle, :model, :year, :color, :location, :service)
+    params.permit(:vehicle, :model, :year, :color, :location, :service, :username)
   end
 end
+
+
+
+

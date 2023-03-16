@@ -31,7 +31,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_15_101632) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "username"
-    t.date "date"
+    t.string "date"
   end
 
   create_table "services", force: :cascade do |t|
