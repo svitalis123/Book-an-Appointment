@@ -19,13 +19,6 @@ class ApplicationController < ActionController::API
     end
   end
 
-  token = auth_header.split[1]
-  begin
-    JWT.decode(token, 'my_secret', true, algorithm: 'HS256')
-  rescue JWT::DecodeError
-    []
-  end
-
   def session_user
     decoded_hash = decoded_token
     return if decoded_hash.nil?
