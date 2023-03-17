@@ -25,7 +25,6 @@ RSpec.describe Reservation, type: :model do
       expect(subject).to_not be_valid
     end
 
-
     it 'resrevation validate' do
       subject.model = 'model'
       expect(subject).to eql('model')
