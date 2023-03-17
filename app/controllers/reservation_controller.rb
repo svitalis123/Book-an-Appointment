@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 class ReservationController < ApplicationController
   def index
     @reservations = Reservation.all
@@ -7,7 +6,7 @@ class ReservationController < ApplicationController
 
   def create
     date = Time.at(params[:date].to_i / 1000).strftime('%d/%m/%Y')
-    @reservation = Reservation.new(reservation_params.merge(date:)))
+    @reservation = Reservation.new(reservation_params.merge(date:))
     if @reservation.save
       @reservation_user = @reservation.reservation_users.build(user_id: params[:userId], reservation_id: @reservation.id)
       if @reservation_user.save

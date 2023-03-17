@@ -61,15 +61,11 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [Bare Foot Mechanic] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[Bare Foot Mechanic]** 
+**[Bare Foot Mechanic]** is a Car repair appointment app built using React and Tailwind CSS on the frontend and Ruby on Rails on the backend.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -96,8 +92,6 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Create, delete, display from database]**
 - **[Login with JWT]**
 - **[Authorised with JWT]**
@@ -114,12 +108,14 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
+- A Desktop or Laptop Computer running on with Windows, Mac OS or Linux operating system.
 - VSCODE installed
 - GitHub account
 - Node.js installed
 - Ruby installed (version 3.1.3 used)
 - rails installed (version 7.0.4 used)
 - Postgresql installed
+- cmd or powershell to run the server
 
 > Clone repository to local machine for the back-end rails
 
@@ -127,43 +123,77 @@ In order to run this project you need:
 
 ### Setup
 
-> Rails :- ensure repository is cloned
+Clone this repository to your desired folder:
 
-> React :- ensure repository is cloned in link provided
+```sh
+  cd my-folder
+  git clone git@github.com:svitalis123/Book-an-Appointment.git
+```
 
 ### Install
 
-Install this project with:
+1. Install the dependencies:
 
-Rails: 
+```sh
+  cd Book-an-Appointment
+  bundle install
 
-Use bundle install (ensure rails version is the same and bundler is the same versions)
-
-React:
-
-Use npm i
+  (ensure rails version is the same and bundler is the same versions)
+```
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following command
+to start the backend server first
 
-Rails: command works in cmd or powershell in VSCODE
+1. Create the database
 
-rails db:create (creates a database to postgresql accessed via pgadmin)
+```
+rails db:create
+```
 
+2. Run the migrations
+
+```
+Run the migrations
+```
+
+3. Migrate the database
+
+```
 rails db:migrate
+```
 
-rails db:seed (preloaded information for easy access)
+4. Seed the database
 
-`rails s -p 8000`
+```
+rails db:seed
+```
+5. Start the server on port 8000
 
-runs the port from 8000 cannot run the React app on the same server
+```sh
+  rails s -p 8000
+```
 
-React: command works in cmd or powershell in VSCODE
+After the backend is running, run the frontend
 
-`npm start`
+1. Clone the Front End Repo:
+```sh
+  git clone git@github.com:topeogunleye/appointment-front-end.git
+```
 
-runs the port from 3000
+2. Install the dependencies:
+
+```sh
+  cd appointement-front-end
+  npm install
+```
+
+3. Start the server on port 3000
+
+```sh
+  npm start
+```
 
 ### Deployment
 
@@ -206,8 +236,6 @@ https://render.com
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **[Implement user authentication]**
 - [ ] **[Update database with new user information]**
 
@@ -219,7 +247,7 @@ https://render.com
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/svitalis123/Book-an-Appointment/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -247,8 +275,6 @@ https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **[How did you determine the ERB diagram]**
 
