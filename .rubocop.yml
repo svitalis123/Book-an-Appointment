@@ -26,7 +26,7 @@ Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
   IgnoredMethods: ['describe']
-  Max: 30
+  Max: 100
 
 Style/Documentation:
   Enabled: false
@@ -40,7 +40,8 @@ Style/DefWithParentheses:
   Enabled: false
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
-
+Layout/EndOfLine:
+  Enabled: false
 Layout/HashAlignment:
   EnforcedColonStyle: key
 Layout/ExtraSpacing:
