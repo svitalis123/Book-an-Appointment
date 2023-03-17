@@ -27,10 +27,10 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img class="README-logo" src="./app/assets/logo-jpg.jpg" alt="logo" width="140"  height="150" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Book an Appointment README</b></h3>
 
 </div>
 
@@ -42,7 +42,6 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -60,17 +59,13 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Bare Foot Mechanic] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+**[Bare Foot Mechanic]** is a Car repair appointment app built using React and Tailwind CSS on the frontend and Ruby on Rails on the backend.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -97,21 +92,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com)
+- **[Create, delete, display from database]**
+- **[Login with JWT]**
+- **[Authorised with JWT]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,83 +102,104 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
+- A Desktop or Laptop Computer running on with Windows, Mac OS or Linux operating system.
+- VSCODE installed
+- GitHub account
+- Node.js installed
+- Ruby installed (version 3.1.3 used)
+- rails installed (version 7.0.4 used)
+- Postgresql installed
+- cmd or powershell to run the server
 
-```sh
- gem install rails
-```
- -->
+> Clone repository to local machine for the back-end rails
+
+> Clone this repository link for the front-end react [REACT-FRONTEND]https://github.com/topeogunleye/appointment-front-end
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:svitalis123/Book-an-Appointment.git
 ```
---->
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
+1. Install the dependencies:
 
 ```sh
-  cd my-project
-  gem install
+  cd Book-an-Appointment
+  bundle install
+
+  (ensure rails version is the same and bundler is the same versions)
 ```
---->
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following command
+to start the backend server first
 
-<!--
-Example command:
+1. Create the database
+
+```
+rails db:create
+```
+
+2. Run the migrations
+
+```
+Run the migrations
+```
+
+3. Migrate the database
+
+```
+rails db:migrate
+```
+
+4. Seed the database
+
+```
+rails db:seed
+```
+5. Start the server on port 8000
 
 ```sh
-  rails server
+  rails s -p 8000
 ```
---->
 
-### Run tests
+After the backend is running, run the frontend
 
-To run tests, run the following command:
+1. Clone the Front End Repo:
+```sh
+  git clone git@github.com:topeogunleye/appointment-front-end.git
+```
 
-<!--
-Example command:
+2. Install the dependencies:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  cd appointement-front-end
+  npm install
 ```
---->
+
+3. Start the server on port 3000
+
+```sh
+  npm start
+```
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+https://render.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,19 +207,28 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Temitope Ogunleye**
 
-👤 **Author1**
+- GitHub: [@topeogunleye](https://github.com/topeogunleye)
+- Twitter: [@tope_leye](https://twitter.com/tope_leye)
+- LinkedIn: [ogunleye](https://linkedin.com/in/ogunleye)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **David Amon-Cofie**
 
-👤 **Author2**
+- GitHub: [@amon-cofie](https://github.com/amon-cofie)
+- Twitter: [@amon_cofie](https://twitter.com/amon_cofie)
+- LinkedIn: [David Amon-Cofie](https://www.linkedin.com/in/david-amon-cofie-2389ab241/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Shuhad Loofer**
+
+- GitHub: [@Shuhad786](https://github.com/Shuhad786)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/shuhad-loofer)
+
+👤 **Vitalis Mutwiri**
+
+- GitHub: [@svitalis123](https://github.com/svitalis123)
+- Twitter: [@WilsonVitalis](https://twitter.com/WilsonVitalis)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/vitalismutwiri)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,11 +236,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Implement user authentication]**
+- [ ] **[Update database with new user information]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -237,7 +247,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/svitalis123/Book-an-Appointment/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,9 +255,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+Plese give a star on our repository as we worked long hours show casing our skills and would really appreciate your feedback thank you
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,9 +263,12 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+The layout and color scheme was inspired by Murat Korkmaz please view his link below
 
-I would like to thank...
+Designed by:
+
+- Murat Korkmaz
+https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -265,15 +276,13 @@ I would like to thank...
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **[How did you determine the ERB diagram]**
 
-- **[Question_1]**
+  - [We looked at what was needed and worked accordingly]
 
-  - [Answer_1]
+- **[Was it hard doing this]**
 
-- **[Question_2]**
-
-  - [Answer_2]
+  - [Yes, it was however nothing worth struggling for comes easy]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -281,8 +290,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
