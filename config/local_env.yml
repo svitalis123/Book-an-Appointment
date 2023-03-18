@@ -1,2 +1,2 @@
-APP_USERNAME: "postgres"
-APP_PASSWORD: "loofer"
+APP_USERNAME: "admin"
+APP_PASSWORD: "admin"
